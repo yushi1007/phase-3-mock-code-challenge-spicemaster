@@ -2,8 +2,9 @@
   "spiceblends": [
     {
       "id": 1,
-      "title": "Pumpkin Spice",
-      "image": "./assets/spices/pumpkinspicelatte.jpg"
+      "title": "",
+      "image": "./assets/spices/pumpkinspicelatte.jpg",
+      "name": "Sugar"
     },
     {
       "id": 2,
@@ -12,12 +13,12 @@
     },
     {
       "id": 3,
-      "title": "Garlic Pepper Salt",
+      "title": "Cheese",
       "image": "./assets/spices/garlicsalt.jpg"
     },
     {
       "id": 4,
-      "title": "Five Spice",
+      "title": "Four",
       "image": "./assets/spices/fivespice.jpg"
     }
   ],
@@ -106,6 +107,31 @@
       "name": "Pepper",
       "spiceblendId": 3,
       "id": 17
+    },
+    {
+      "name": "Nice",
+      "spiceblendId": 1,
+      "id": 18
+    },
+    {
+      "name": "Salt",
+      "spiceblendId": 4,
+      "id": 19
+    },
+    {
+      "name": "",
+      "spiceblendId": 4,
+      "id": 20
+    },
+    {
+      "name": "Salt",
+      "spiceblendId": 4,
+      "id": 21
+    },
+    {
+      "name": "",
+      "spiceblendId": 1,
+      "id": 22
     }
   ]
 }

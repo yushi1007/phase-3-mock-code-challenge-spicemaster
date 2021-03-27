@@ -2,9 +2,8 @@
 const updateForm = document.querySelector('form#update-form')
 const ingredientFrom = document.querySelector('form#ingredient-form')
 const spiceImages = document.querySelector('div#spice-images')
+
 // 1
-
-
 function displaySpiceBlend(spiceDetails) {
 
     const spiceBlendDetail = document.querySelector('div#spice-blend-detail')
@@ -68,8 +67,9 @@ ingredientFrom.addEventListener('submit', e => {
         const name = e.target['ingredient-name'].value
         const li = document.createElement('li')
         li.textContent = name
-
+        
         const ul = document.querySelector('ul.ingredients-list')
+        console.log(ul)
         ul.append(li)
 
         ingredientFrom.reset()
@@ -91,40 +91,40 @@ ingredientFrom.addEventListener('submit', e => {
 })
 
 // 5
-fetch('http://localhost:3000/spiceblends')
-        .then(response => response.json())
-        .then(spiceImage => {
+// fetch('http://localhost:3000/spiceblends')
+//         .then(response => response.json())
+//         .then(spiceImage => {
             
-        const spiceImages = document.querySelector('div#spice-images')
+//         const spiceImages = document.querySelector('div#spice-images')
 
-                spiceImage.forEach(spiceBlendImage => {
+//                 spiceImage.forEach(spiceBlendImage => {
 
-                    const img = document.createElement('img')
+//                     const img = document.createElement('img')
 
-                    img.dataset.id = spiceBlendImage.id
-                    img.src = spiceBlendImage.image
-                    img.alt = spiceBlendImage.title
+//                     img.dataset.id = spiceBlendImage.id
+//                     img.src = spiceBlendImage.image
+//                     img.alt = spiceBlendImage.title
 
-                    spiceImages.append(img)
+//                     spiceImages.append(img)
 
-        })
-    })
+//         })
+//     })
 
 
-// 6
-spiceImages.addEventListener('click', e => {
+// // 6
+// spiceImages.addEventListener('click', e => {
 
-    if (e.target.matches('img')) {
+//     if (e.target.matches('img')) {
 
-            const spiceId = e.target.dataset.id
+//             const spiceId = e.target.dataset.id
         
-        fetch(`http://localhost:3000/spiceblends/${spiceId}`)
-            .then(response => response.json())
-            .then(spiceInfo => {
-                    displaySpiceBlend(spiceInfo)
-        })
-    }
-})
+//         fetch(`http://localhost:3000/spiceblends/${spiceId}`)
+//             .then(response => response.json())
+//             .then(spiceInfo => {
+//                     displaySpiceBlend(spiceInfo)
+//         })
+//     }
+// })
 
 
 

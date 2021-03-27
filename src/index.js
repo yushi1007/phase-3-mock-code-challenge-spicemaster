@@ -1,4 +1,4 @@
-// write your code here
+//write your code here
 const updateForm = document.querySelector('form#update-form')
 const ingredientFrom = document.querySelector('form#ingredient-form')
 const spiceImages = document.querySelector('div#spice-images')
@@ -82,7 +82,7 @@ ingredientFrom.addEventListener('submit', e => {
             },
             body: JSON.stringify({
                 name: name, 
-                spiceblendId: parseInt(e.target.dataset.id)
+                spiceBlendId: parseInt(e.target.dataset.id)
             })
         })
             .then(response => response.json())

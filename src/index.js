@@ -90,7 +90,7 @@ ingredientFrom.addEventListener('submit', e => {
         
 })
 
-5
+//5
 fetch('http://localhost:3000/spiceblends')
         .then(response => response.json())
         .then(spiceImage => {

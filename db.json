@@ -2,7 +2,7 @@
   "spiceblends": [
     {
       "id": 1,
-      "title": "Spice",
+      "title": "Yu Shi",
       "image": "./assets/spices/pumpkinspicelatte.jpg"
     },
     {
@@ -141,6 +141,11 @@
       "name": "Lime",
       "spiceBlendId": 1,
       "id": 24
+    },
+    {
+      "name": "New",
+      "spiceblendId": 1,
+      "id": 25
     }
   ]
 }
